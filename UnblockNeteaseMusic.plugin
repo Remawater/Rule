@@ -1,0 +1,5 @@
+# NAME: NetEaseMusic 解锁
+
+
+[Rule]
+DOMAIN-SUFFIX,kuwo.cn,DIRECT
