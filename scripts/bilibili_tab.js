@@ -58,7 +58,7 @@ body['data']['top'] = [
 ]
 // app 是下边 tab 栏（删除了会员购栏目）
 body['data']['bottom'] =[
-	/*
+	
     {
         id: 177,
         icon: 'http://i0.hdslb.com/bfs/archive/63d7ee88d471786c1af45af86e8cb7f607edf91b.png',
@@ -68,7 +68,7 @@ body['data']['bottom'] =[
         tab_id: 'home',
         pos: 1
     },
-	
+/*
     {
         id: 178,
         icon: 'http://i0.hdslb.com/bfs/archive/9c453a54eb83f5140cd098bf2e8ed8a599edc7fe.png',
