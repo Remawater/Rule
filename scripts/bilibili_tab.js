@@ -7,7 +7,7 @@ body['data']['tab'] = [
     {
         id: 39,
         name: '你所热爱的，就是你的生活.',
-        uri: 'bilibili://live/hom',
+        uri: 'bilibili://live/shit',
         tab_id: '热爱生活',
         pos: 5
     },
