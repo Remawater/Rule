@@ -36,5 +36,5 @@ http-response ^https://app\.bilibili\.com/x/resource/show/tab(/v2)?\?access_key 
 #傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
 #傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
 [MITM]
-hostname = app.bilibili.com, api.vc.bilibili.com
+hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, ap?.bilibili.com
 #傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
