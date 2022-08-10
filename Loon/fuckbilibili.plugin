@@ -21,6 +21,14 @@ app.bilibili.com/bilibili.app.show.v1.Popular/* reject
 app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynVideo reject
 app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynAll reject
 #傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
+#屏蔽bilibili首页推荐  失效检查加解密了吗
+app.bilibili.com/x/v2/feed/* reject
+api.vc.bilibili.com//feed/v1/feed/* reject
+#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
+#屏蔽bilibili动态页面
+app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynVideo reject
+app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynAll reject
+#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
 [Script]
 #傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
 #傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
