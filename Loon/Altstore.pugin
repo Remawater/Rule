@@ -2,4 +2,4 @@
 https://altstore.oatmealdome.me/ https://config-feh.vercel.app/AltStore.json header
 
 [MITM]
-hostname = %APPEND% altstore.oatmealdome.me
+hostname = altstore.oatmealdome.me
