@@ -1,5 +1,5 @@
 [URL Rewrite]
-https://altstore.oatmealdome.me/ https://config-feh.vercel.app/AltStore.json header
+https://altstore.oatmealdome.me/ https://raw.githubusercontent.com/EhPanda-Team/EhPanda/main/AltStore.json header
 https://alt.getutm.app/ https://config-feh.vercel.app/AltStore.json header
 [MITM]
 hostname = altstore.oatmealdome.me, alt.getutm.app
