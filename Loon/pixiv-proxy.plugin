@@ -7,8 +7,8 @@
 DOMAIN,pixiv.localbendi.ddnsgeek.com,Proxy
 
 [URL Rewrite]
-^http://i\.pixiv\.cat 302 http://pixiv.localbendi.ddnsgeek.com:84
-^http://i\.pixiv\.re 302 http://pixiv.localbendi.ddnsgeek.com:84
+^https://i\.pixiv\.cat 302 http://pixiv.localbendi.ddnsgeek.com:84
+^https://i\.pixiv\.re 302 http://pixiv.localbendi.ddnsgeek.com:84
 
 [MITM]
 
