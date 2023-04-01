@@ -4,11 +4,11 @@
 #!author=余水
 #!icon=http://img.itmop.com/upload/2021-3/2021381448307916.png
 [Rule]
-DOMAIN,pixiv.localbendi.ddnsgeek.com,Proxy
+IP-CIDR,192.168.5.26,Proxy
 
 [URL Rewrite]
-^https://i\.pixiv\.cat 302 http://pixiv.localbendi.ddnsgeek.com:84
-^https://i\.pixiv\.re 302 http://pixiv.localbendi.ddnsgeek.com:84
+^https://i\.pixiv\.cat 302 http://192.168.5.26:84
+^https://i\.pixiv\.re 302 http://192.168.5.26:84
 
 [MITM]
 
