@@ -7,8 +7,9 @@
 DOMAIN,pixiv.localbendi.ddnsgeek.com,Proxy
 
 [URL Rewrite]
-(https?://i\.pixiv\.cat) header http://pixiv.localbendi.ddnsgeek.com:84
-(https?://i\.pixiv\.re) header http://pixiv.localbendi.ddnsgeek.com:84
+^http://i\.pixiv\.cat 302 http://pixiv.localbendi.ddnsgeek.com:84
+^http://i\.pixiv\.re 302 http://pixiv.localbendi.ddnsgeek.com:84
+
 [MITM]
 
 hostname = i.pixiv.cat,i.pixiv.re
