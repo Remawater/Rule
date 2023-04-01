@@ -1,12 +1,14 @@
-#!name=pixiv.cat to i.pixiv.re 反向代理
-#!desc=pixiv.cat 反向代理
+#!name=pixiv 反向代理
+#!desc= 本地反向代理  规则需指向Home
 #!homepage=https://gist.github.com/Remawater/1cebc7d1ddb1c757f400963926c08697
 #!author=余水
 #!icon=http://img.itmop.com/upload/2021-3/2021381448307916.png
+[Rule]
+DOMAIN,pixiv.localbendi.ddnsgeek.com,Proxy
 
 [URL Rewrite]
-i.pixiv.cat 302 i.pixiv.re
-
+i.pixiv.cat 302 pixiv.localbendi.ddnsgeek.com:84
+i.pixiv.re 302 pixiv.localbendi.ddnsgeek.com:84
 [MITM]
 
-hostname = i.pixiv.cat
+hostname = i.pixiv.cat,i.pixiv.re
