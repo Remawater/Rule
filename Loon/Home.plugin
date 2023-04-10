@@ -1,0 +1,6 @@
+#!name=Home
+#!desc= 规则需指向Home
+#!author=余水
+#!icon=https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Apple_HomeKit_logo.svg/600px-Apple_HomeKit_logo.svg.png
+[Rule]
+IP-CIDR,192.168.233.0/24,Proxy,no-resolove
