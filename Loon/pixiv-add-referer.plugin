@@ -1,0 +1,14 @@
+#!name=pixiv-add-refere
+#!desc= 
+#!author=余水
+#!icon=http://img.itmop.com/upload/2021-3/2021381448307916.png
+### https://pixiv.cat/reverseproxy.html
+
+[URL Rewrite]
+(https://i\.pximg\.net/[^\s]+) header-add Referer https://www.pixiv.net/
+^https://i\.pixiv\.cat 302 https://i.pximg.net
+^https://i\.pixiv\.re 302 https://i.pximg.net
+
+[MITM]
+
+hostname = i.pixiv.cat,i.pixiv.re,i.pximg.net
