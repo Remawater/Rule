@@ -1,7 +1,8 @@
 #!name=pixiv-add-refere
-#!desc= 
+#!desc=Thanks 🍟 wuhu
 #!author=余水
 #!icon=http://img.itmop.com/upload/2021-3/2021381448307916.png
+#!homepage=https://github.com/Remawater/Rule/edit/main/Loon/pixiv-add-referer.plugin
 ### https://pixiv.cat/reverseproxy.html
 
 [URL Rewrite]
