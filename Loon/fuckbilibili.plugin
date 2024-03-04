@@ -1,40 +1,33 @@
 
-#!name=傻逼哔哩哔哩
+#!name=屏蔽哔哩哔哩
 #!author=Remawater
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
 [Rule]
-DOMAIN-SUFFIX,grpc.biliapi.net,REJECT
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
+
 [URL Rewrite]
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
-#哔哩哔哩 屏蔽搜索填充内容和热搜
+
+# 屏蔽搜索填充内容和热搜
 ^https?:\/\/api\.vc\.bilibili\.com\/search_svr\/v\d\/Search\/recommend_words reject-dict
 app.bilibili.com/x/v2/search/(defaultword|square) reject
 app.bilibili.com/bilibili.app.interface.v1.Search/DefaultWords reject
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
+
 ###屏蔽哔哩哔哩首页热门 
-##需要添加下面的规则👇
-#🚫DOMAIN-SUFFIX,grpc.biliapi.net,REJECT
-app.bilibili.com/bilibili.app.show.v1.Popular/* reject
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
+app\.biliapi\.net/x/v2/feed/index\?access_key[a-zA-Z0-9_?=.-]+ reject
+(?<=https://app\.bilibili\.com/x/v2/feed/index\?access_key=)[\w-]+ reject
+
 #屏蔽bilibili动态页面
-app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynVideo reject
-app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynAll reject
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
-#屏蔽bilibili首页推荐  失效检查加解密了吗
-app.bilibili.com/x/v2/feed/* reject
-api.vc.bilibili.com//feed/v1/feed/* reject
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
+#app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynVideo reject
+#app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynAll reject
+
+
+#app.bilibili.com/x/v2/feed/* reject
+#api.vc.bilibili.com//feed/v1/feed/* reject
+
 #屏蔽bilibili动态页面
-app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynVideo reject
-app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynAll reject
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
+#app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynVideo reject
+#app.bilibili.com/bilibili.app.dynamic.v2.Dynamic/DynAll reject
 [Script]
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
 http-response ^https://app\.bilibili\.com/x/resource/show/tab(/v2)?\?access_key script-path=https://raw.githubusercontent.com/Remawater/Rule/main/scripts/bilibili_tab.js, requires-body=true, timeout=10, tag=bilibili_tab.js
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
+
 [MITM]
-hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, ap?.bilibili.com
-#傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩傻逼哔哩哔哩
+hostname = app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.vc.bilibili.com, ap?.bilibili.com, app.bilibili.com, app.biliapi.net
+
